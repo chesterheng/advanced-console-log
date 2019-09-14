@@ -33,3 +33,10 @@ for(let i = 0; i < 100; i++) {
     console.count("less than 50");
   }
 }
+
+console.time("createObject");
+const array = [];
+for(let i = 0; i < 10000; i++) {
+  array.push({ index: i });
+}
+console.timeEnd("createObject");
