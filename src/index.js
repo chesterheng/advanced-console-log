@@ -24,3 +24,12 @@ if(!foo) {
 }
 console.assert(foo, "foo wasn't set");
 
+for(let i = 0; i < 100; i++) {
+  let num = Math.random() * 100;
+
+  if(num > 50) {
+    console.count("greater than 50");
+  } else {
+    console.count("less than 50");
+  }
+}
