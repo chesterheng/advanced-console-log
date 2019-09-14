@@ -17,3 +17,10 @@ for(let i = 0; i < 100; i++) {
   console.groupEnd();
   console.groupEnd();
 }
+
+const foo = undefined;
+if(!foo) {
+  console.error("foo wasn't set");
+}
+console.assert(foo, "foo wasn't set");
+
